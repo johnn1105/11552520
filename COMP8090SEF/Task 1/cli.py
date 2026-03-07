@@ -2,7 +2,6 @@
 # CLI first:
 # 1) login system (default 8090/8090)
 # 2) ask enter to GUI? (y/n)
-# 3) if not, run CLI menu for CRUD + schedule + invoice
 
 from datetime import datetime
 from repository import JsonStudentRepository
@@ -188,7 +187,7 @@ def run_cli_app() -> None:
 
     repo = JsonStudentRepository(DATA_PATH)
     service = StudentService(repo)
-    service.ensure_default_student()  # default case: John Chan
+    service.ensure_default_student()  # default case
 
     # Ask whether to open GUI
     ans = input("Enter to system (GUI)? (y/n): ").strip().lower()
