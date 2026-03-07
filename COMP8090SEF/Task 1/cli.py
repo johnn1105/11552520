@@ -59,7 +59,6 @@ def edit_student_cli(service: StudentService) -> None:
         print("Student not found.")
         return
 
-    # Let user press Enter to keep old values
     name = input(f"Name ({s.name}): ").strip() or s.name
     birth = input(f"Birth ({s.birth_date}): ").strip() or s.birth_date.isoformat()
     instr = input(f"Instrument ({s.instrument}): ").strip() or s.instrument
@@ -69,7 +68,6 @@ def edit_student_cli(service: StudentService) -> None:
     weekday = input(f"Lesson weekday ({s.lesson_weekday}): ").strip() or s.lesson_weekday
     place = input(f"Place ({s.place}): ").strip() or s.place
 
-    # Update object (encapsulation: data stays inside object)
     y, m, d = map(int, birth.split("-"))
     s.name = name
     s.birth_date = __import__("datetime").date(y, m, d)
@@ -131,7 +129,6 @@ def invoice_cli(service: StudentService) -> None:
     dates = service.lesson_dates_in_month(year, month, s.lesson_weekday)
     total = s.fee_hkd * len(dates)
 
-    # Simple invoice no: YYYYMM-ID-0001 (you can improve)
     invoice_no = f"{year}{month:02d}-{sid}-0001"
 
     inv = Invoice(
