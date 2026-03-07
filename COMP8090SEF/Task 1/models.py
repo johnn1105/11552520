@@ -6,20 +6,13 @@ from datetime import date
 from abc import ABC, abstractmethod
 
 class Person(ABC):
-    """
-    Abstract base class (Abstraction).
-    We don't directly create Person objects.
-    """
+
     @abstractmethod
     def display_name(self) -> str:
         pass
 
 @dataclass
 class Student(Person):
-    """
-    Student is a real-life entity in this system.
-    Encapsulation: we manage student data in one object.
-    """
     student_id: int
     name: str
     birth_date: date
@@ -27,8 +20,8 @@ class Student(Person):
     grade: int
     lesson_minutes: int
     fee_hkd: int
-    lesson_weekday: str   # e.g. "Mon"
-    place: str            # "Studio" / "Home"
+    lesson_weekday: str   
+    place: str           
 
     def display_name(self) -> str:
         return f"{self.name} (#{self.student_id})"
@@ -66,7 +59,7 @@ class Student(Person):
 @dataclass
 class Invoice:
     invoice_no: str
-    month: str            # e.g. "2026-02"
+    month: str        
     student_name: str
     instrument: str
     grade: int
