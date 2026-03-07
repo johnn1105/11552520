@@ -1,6 +1,5 @@
 # repository.py
-# Repository pattern:
-# - Abstract repository 
+# Abstract repository 
 
 import json
 import os
