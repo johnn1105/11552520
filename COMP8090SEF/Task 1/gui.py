@@ -1,6 +1,5 @@
 # gui.py
-# Tkinter GUI layer (simple but functional).
-# Uses the same StudentService -> separation of concerns (modular design).
+# Tkinter GUI layer
 
 import tkinter as tk
 from tkinter import ttk, messagebox, simpledialog
@@ -76,7 +75,6 @@ class App(tk.Tk):
         return int(values[0])
 
     def add_student(self):
-        # Simple input dialogs (you can upgrade to a full form window)
         try:
             name = simpledialog.askstring("Add Student", "Name:")
             if not name:
@@ -106,7 +104,6 @@ class App(tk.Tk):
             return
 
         try:
-            # allow empty to keep current
             name = simpledialog.askstring("Edit Student", "Name:", initialvalue=s.name) or s.name
             birth = simpledialog.askstring("Edit Student", "Birth (yyyy-mm-dd):", initialvalue=s.birth_date.isoformat()) or s.birth_date.isoformat()
             instr = simpledialog.askstring("Edit Student", "Instrument:", initialvalue=s.instrument) or s.instrument
