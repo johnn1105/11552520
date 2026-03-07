@@ -1,5 +1,4 @@
 # services.py
-# Business logic layer: validate inputs, generate schedule, etc.
 
 from __future__ import annotations
 from datetime import date, datetime, timedelta
@@ -73,7 +72,7 @@ class StudentService:
         lesson_weekday: str,
         place: str
     ) -> Student:
-        # Basic validation
+
         if lesson_weekday not in WEEKDAY_MAP:
             raise ValueError("lesson_weekday must be one of Mon..Sun")
         if place not in ("Studio", "Home"):
@@ -113,12 +112,8 @@ class StudentService:
         """
         target = WEEKDAY_MAP[weekday]
         first_day = date(year, month, 1)
-
-        # Find first target weekday in the month
         offset = (target - first_day.weekday()) % 7
         first_lesson = first_day + timedelta(days=offset)
-
-        # Iterate by 7 days until month changes
         result = []
         cur = first_lesson
         while cur.month == month:
