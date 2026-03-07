@@ -1,10 +1,6 @@
 # repository.py
 # Repository pattern:
-# - Abstract repository (interface)
-# - JSON repository implementation
-#
-# This demonstrates Abstraction + Polymorphism:
-# We can swap JsonStudentRepository to SqlStudentRepository later without changing services.
+# - Abstract repository 
 
 import json
 import os
