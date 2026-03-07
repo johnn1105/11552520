@@ -1,5 +1,4 @@
 # models.py
-# Define core OOP models: Person (abstract), Student (concrete), Invoice
 
 from __future__ import annotations
 from dataclasses import dataclass, field
