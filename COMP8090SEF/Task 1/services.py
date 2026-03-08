@@ -104,10 +104,6 @@ class StudentService:
         return [s for s in self.repo.list_students() if keyword in s.name.lower()]
 
     def lesson_dates_in_month(self, year: int, month: int, weekday: str) -> List[str]:
-        """
-        Return all lesson dates (ISO strings) in a given month for a given weekday.
-        Example: 2026-02 + Mon => 2026-02-02, 09, 16, 23
-        """
         target = WEEKDAY_MAP[weekday]
         first_day = date(year, month, 1)
         offset = (target - first_day.weekday()) % 7
@@ -120,10 +116,6 @@ class StudentService:
         return result
 
     def schedule_for_month(self, year: int, month: int) -> List[tuple[str, str]]:
-        """
-        Show my schedule (one month):
-        Returns list of (student_name, date)
-        """
         schedule = []
         for s in self.repo.list_students():
             for dt in self.lesson_dates_in_month(year, month, s.lesson_weekday):
