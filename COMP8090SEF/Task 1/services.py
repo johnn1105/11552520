@@ -15,13 +15,11 @@ class StudentService:
     def __init__(self, repo: StudentRepository):
         self.repo = repo
     def list_students(self) -> List[Student]:
-        """Return all students from repository (used by GUI/CLI)."""
         return self.repo.list_students()
-    def ensure_default_student(self) -> None:
+    def default_student(self) -> None:
         """
-        Default case:
-        If no student exists, auto-create multiple demo students
-        for testing the system.
+        Default case
+        testing the system.
         """
 
         if self.repo.list_students():
@@ -64,7 +62,7 @@ class StudentService:
     def add_student(
         self,
         name: str,
-        birth_date_str: str,  # yyyy-mm-dd
+        birth_date_str: str, 
         instrument: str,
         grade: int,
         lesson_minutes: int,
