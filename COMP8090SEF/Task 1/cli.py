@@ -1,7 +1,7 @@
 # cli.py
 # CLI first:
-# 1) login system (default 8090/8090)
-# 2) ask enter to GUI? (y/n)
+# 1 login system (default 8090/8090)
+# 2 enter to GUI
 
 from datetime import datetime
 from repository import JsonStudentRepository
@@ -184,9 +184,8 @@ def run_cli_app() -> None:
 
     repo = JsonStudentRepository(DATA_PATH)
     service = StudentService(repo)
-    service.ensure_default_student()  # default case
+    service.ensure_default_student() 
 
-    # Ask whether to open GUI
     ans = input("Enter to system (GUI)? (y/n): ").strip().lower()
     if ans == "y":
         from gui import run_gui_app
