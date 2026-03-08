@@ -6,8 +6,6 @@
 from datetime import datetime
 from repository import JsonStudentRepository
 from services import StudentService
-from invoice import generate_invoice_pdf
-from models import Invoice
 
 DATA_PATH = "data/students.json"
 
@@ -147,7 +145,7 @@ def invoice_cli(service: StudentService) -> None:
 
 def run_cli_menu(service: StudentService) -> None:
     while True:
-        print("\n=== Music Teacher Management (CLI) ===")
+        print("\n=== Music Teacher Management ===")
         print("1) View my students")
         print("2) Add student")
         print("3) Edit student")
