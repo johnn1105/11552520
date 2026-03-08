@@ -1,14 +1,15 @@
 # cli.py
-# CLI first:
-# 1 login system (default 8090/8090)
-# 2 enter to GUI
+# 1. Handle user login
+# 2. Provide a CLI menu
+# 3. service-layer functions 
+# 4. launch the GUI
 
 from datetime import datetime
 from repository import JsonStudentRepository
 from services import StudentService
-
+# Path to the JSON file used to store student data
 DATA_PATH = "data/students.json"
-
+# Default login credentials
 DEFAULT_ACC = "8090"
 DEFAULT_PW = "8090"
 
@@ -16,6 +17,7 @@ def login_cli() -> bool:
     print("=== Login System (CLI) ===")
     acc = input(f"Account (default {DEFAULT_ACC}): ").strip() or DEFAULT_ACC
     pw = input(f"Password (default {DEFAULT_PW}): ").strip() or DEFAULT_PW
+    # Validate login credentials
     if acc == DEFAULT_ACC and pw == DEFAULT_PW:
         print("Login success.\n")
         return True
@@ -115,33 +117,7 @@ def show_schedule_cli(service: StudentService) -> None:
         print(f"{dt} - {name}")
 
 def invoice_cli(service: StudentService) -> None:
-    print("=== Generate Invoice (PDF) ===")
-    ym = input("Enter month (YYYY-MM), default 2026-02: ").strip() or "2026-02"
-    year, month = map(int, ym.split("-"))
-    sid = int(input("Student ID: ").strip())
-    s = service.repo.get_by_id(sid)
-    if not s:
-        print("Student not found.")
-        return
-
-    dates = service.lesson_dates_in_month(year, month, s.lesson_weekday)
-    total = s.fee_hkd * len(dates)
-
-    invoice_no = f"{year}{month:02d}-{sid}-0001"
-
-    inv = Invoice(
-        invoice_no=invoice_no,
-        month=ym,
-        student_name=s.name,
-        instrument=s.instrument,
-        grade=s.grade,
-        lesson_dates=dates,
-        fee_hkd=s.fee_hkd,
-        total_hkd=total
-    )
-
-    path = generate_invoice_pdf(inv)
-    print(f"Invoice generated: {path}")
+    pass
 
 def run_cli_menu(service: StudentService) -> None:
     while True:
@@ -150,8 +126,8 @@ def run_cli_menu(service: StudentService) -> None:
         print("2) Add student")
         print("3) Edit student")
         print("4) Delete student")
-        print("5) Show my schedule (one month)")
-        print("6) Generate invoice (PDF)")
+        print("5) Show my schedule in one month")
+        print("6) Generate invoice")
         print("0) Exit")
         choice = input("Choose: ").strip()
 
