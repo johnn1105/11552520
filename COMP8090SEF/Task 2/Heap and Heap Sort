@@ -1,6 +1,7 @@
 1. Introduction
 One important data structure is the Heap, which is commonly used to implement priority queues and efficient sorting algorithms.
-This report introduces the Heap data structure, including its abstract data type (ADT), operations. The report also explains the Heap Sort algorithm, analyzes its time complexity, and demonstrates how the algorithm works through examples.
+This report introduces the Heap data structure, including its abstract data type (ADT), operations. 
+The report also explains the Heap Sort algorithm, analyzes its time complexity, and demonstrates how the algorithm works through examples.
 Heap Data Structure
 A Heap is a special type of binary tree that satisfies two properties:
 1.	Complete Binary Tree
