@@ -107,6 +107,19 @@ Installation
 Step 1: Download or clone the project files.
 
 Step 2: Install required library
+This project uses both built-in Python libraries and one external library.
+
+Built-in Libraries (no installation required)
+
+json (data storage handling)
+datetime (date and time processing)
+pathlib (file path management)
+tkinter (GUI interface)
+
+External Library 
+reportlab (for generating PDF invoices and income reports)
+
+Installation Command
 pip install reportlab
 
 Step 3: Run the program
