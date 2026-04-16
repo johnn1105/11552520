@@ -1,0 +1,355 @@
+{
+  "students": [
+    {
+      "student_id": 1,
+      "name": "John Chan",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "0900",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 2,
+      "name": "Alan Lee",
+      "birth_date": "2002-03-12",
+      "instrument": "Piano",
+      "grade": "6",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1000",
+      "fee_hkd": 450,
+      "lesson_weekday": "Tue",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 3,
+      "name": "Jace Wong",
+      "birth_date": "2003-07-20",
+      "instrument": "Violin",
+      "grade": "5",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1100",
+      "fee_hkd": 400,
+      "lesson_weekday": "Wed",
+      "place": "Home",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 4,
+      "name": "Mary Ho",
+      "birth_date": "2000-11-02",
+      "instrument": "Flute",
+      "grade": "7",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1200",
+      "fee_hkd": 480,
+      "lesson_weekday": "Thu",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 5,
+      "name": "Chris Lau",
+      "birth_date": "2004-09-14",
+      "instrument": "Drums",
+      "grade": "4",
+      "lesson_minutes": 60,
+      "lesson_start_time": "1330",
+      "fee_hkd": 550,
+      "lesson_weekday": "Fri",
+      "place": "Home",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 6,
+      "name": "Emily Ng",
+      "birth_date": "2005-05-10",
+      "instrument": "Guitar",
+      "grade": "6",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1500",
+      "fee_hkd": 420,
+      "lesson_weekday": "Sat",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 7,
+      "name": "David Chan",
+      "birth_date": "2002-12-25",
+      "instrument": "Saxophone",
+      "grade": "7",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1600",
+      "fee_hkd": 500,
+      "lesson_weekday": "Sun",
+      "place": "Home",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 8,
+      "name": "Sophia Lam",
+      "birth_date": "2003-08-18",
+      "instrument": "Cello",
+      "grade": "5",
+      "lesson_minutes": 60,
+      "lesson_start_time": "1700",
+      "fee_hkd": 530,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 9,
+      "name": "Daniel Cheung",
+      "birth_date": "2001-04-30",
+      "instrument": "Clarinet",
+      "grade": "6",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1830",
+      "fee_hkd": 460,
+      "lesson_weekday": "Tue",
+      "place": "Home",
+      "plan_type": "regular",
+      "lesson_overrides": {
+        "2026-02-03": {
+          "date": "2026-02-03",
+          "start_time": "2000",
+          "lesson_minutes": 45,
+          "cancelled": false
+        },
+        "2026-02-10": {
+          "date": "2026-02-10",
+          "start_time": "1830",
+          "lesson_minutes": 45,
+          "cancelled": true
+        }
+      },
+      "custom_lessons": []
+    },
+    {
+      "student_id": 10,
+      "name": "Kevin Yeung",
+      "birth_date": "2004-06-22",
+      "instrument": "Trombone",
+      "grade": "5",
+      "lesson_minutes": 45,
+      "lesson_start_time": "2000",
+      "fee_hkd": 470,
+      "lesson_weekday": "Wed",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {
+        "2026-02-04": {
+          "date": "2026-02-05",
+          "start_time": "2100",
+          "lesson_minutes": 45,
+          "cancelled": false
+        },
+        "2026-02-11": {
+          "date": "2026-02-11",
+          "start_time": "2000",
+          "lesson_minutes": 45,
+          "cancelled": true
+        }
+      },
+      "custom_lessons": []
+    },
+    {
+      "student_id": 11,
+      "name": "Jason Lee",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "5",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1300",
+      "fee_hkd": 450,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "flexible",
+      "lesson_overrides": {},
+      "custom_lessons": [
+        {
+          "date": "2026-02-19",
+          "start_time": "1300",
+          "lesson_minutes": 45
+        }
+      ]
+    },
+    {
+      "student_id": 12,
+      "name": "Jason Wong",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "6",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1300",
+      "fee_hkd": 500,
+      "lesson_weekday": "Wed",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 13,
+      "name": "Peter Lee",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "5",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1300",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "flexible",
+      "lesson_overrides": {},
+      "custom_lessons": [
+        {
+          "date": "2026-02-11",
+          "start_time": "1400",
+          "lesson_minutes": 45
+        },
+        {
+          "date": "2026-02-15",
+          "start_time": "1400",
+          "lesson_minutes": 45
+        }
+      ]
+    },
+    {
+      "student_id": 14,
+      "name": "alex",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1600",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {
+        "2026-02-02": {
+          "date": "2026-02-03",
+          "start_time": "1600",
+          "lesson_minutes": 45,
+          "cancelled": false
+        },
+        "2026-02-09": {
+          "date": "2026-02-09",
+          "start_time": "1600",
+          "lesson_minutes": 45,
+          "cancelled": true
+        }
+      },
+      "custom_lessons": []
+    },
+    {
+      "student_id": 15,
+      "name": "test",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1400",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {
+        "2026-02-02": {
+          "date": "2026-02-03",
+          "start_time": "1400",
+          "lesson_minutes": 45,
+          "cancelled": false
+        },
+        "2026-02-09": {
+          "date": "2026-02-09",
+          "start_time": "1400",
+          "lesson_minutes": 45,
+          "cancelled": true
+        }
+      },
+      "custom_lessons": []
+    },
+    {
+      "student_id": 16,
+      "name": "test test",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1300",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "flexible",
+      "lesson_overrides": {},
+      "custom_lessons": [
+        {
+          "date": "2026-02-14",
+          "start_time": "1300",
+          "lesson_minutes": 45
+        }
+      ]
+    },
+    {
+      "student_id": 17,
+      "name": "qwe",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1200",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "regular",
+      "lesson_overrides": {},
+      "custom_lessons": []
+    },
+    {
+      "student_id": 18,
+      "name": "asd",
+      "birth_date": "2001-01-01",
+      "instrument": "Trumpet",
+      "grade": "8",
+      "lesson_minutes": 45,
+      "lesson_start_time": "1300",
+      "fee_hkd": 500,
+      "lesson_weekday": "Mon",
+      "place": "Studio",
+      "plan_type": "flexible",
+      "lesson_overrides": {},
+      "custom_lessons": [
+        {
+          "date": "2026-02-04",
+          "start_time": "1000",
+          "lesson_minutes": 45
+        }
+      ]
+    }
+  ]
+}
